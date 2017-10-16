@@ -197,9 +197,9 @@ Vue.component('change-password', {
 
 ### AngularJS
 
-Constructor is used to inject dependencies, what is done implicitly by the [$inject](https://docs.angularjs.org/api/auto/service/$injector) service.
+Constructor is used to inject dependencies which is done implicitly by the [$inject](https://docs.angularjs.org/api/auto/service/$injector) service.
 
-`'ngInject'` annotation has been used which allows automatic method annotation by the ng-annotate plugin (e.g. [ng-annotate-loader](https://www.npmjs.com/package/ng-annotate-loader) for Webpack). That's essentially needed to counter minification problems.
+`'ngInject'` annotation has been used which allows automatic method annotation by the ng-annotate plugin (e.g. [ng-annotate-loader](https://www.npmjs.com/package/ng-annotate-loader) for Webpack). This is essentially needed to counter minification problems.
 
 ```js
 class ChangePasswordController {
@@ -219,7 +219,7 @@ class ChangePasswordController {
 
 ### Angular
 
-You specify the definition of the dependencies in the constructor (leveraging TypeScript's constructor syntax for declaring parameters and properties simultaneously).
+You have to specify the definition of the dependencies in the constructor (leveraging TypeScript's constructor syntax for declaring parameters and properties simultaneously).
 
 ```ts
 import { Component } from '@angular/core';
@@ -276,7 +276,7 @@ class ChangePassword extends React.Component {
 
 ### AngularJS
 
-Values on component inputs must be one of the following.
+Values in component inputs must be one of the following.
 - string binding (defined as `@`)
 - expression binding (defined as `<`)
 - reference binding (defined as `&`)
